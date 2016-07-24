@@ -1,0 +1,12 @@
+<% @images.each do |image| %>
+  <% link = image.split('/').last %>
+  <%= image_tag  link %>
+  <ul>
+    <li>
+      <a class="twitter-share-button"
+         href="https://twitter.com/intent/tweet?text=<%=CGI.escape("#robisadummy #{Rails.application.secrets.url}/assets/#{link}")%>">
+        Share to Twitter</a>
+    </li>
+  </ul>
+<% end %>
+
