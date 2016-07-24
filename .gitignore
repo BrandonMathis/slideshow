@@ -16,3 +16,5 @@
 !/log/.keep
 /tmp
 .tape
+config/database.yml
+config/secrets.yml
