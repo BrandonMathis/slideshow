@@ -4,7 +4,7 @@ class PicturesController < ApplicationController
     %w(jpg JPG).each do |ext|
       @images += Dir.glob("public/images/*.#{ext}")
     end
-    @images = @images.sort_by{ |f| File.ctime(f) }
+    @images = @images.sort_by{ |f| File.ctime(f) }.reverse
     render :index
   end
 end
