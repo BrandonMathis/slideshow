@@ -4,9 +4,6 @@
   <ul>
     <li>
       <% share_text = CGI.escape("#robisadummy #{Rails.application.secrets.url}/images/#{link}") %>
-      <a class="twitter-share-button"
-         href="https://twitter.com/intent/tweet?text=<%=share_text%>">
-        Share to Twitter</a>
     </li>
   </ul>
 <% end %>
