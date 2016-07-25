@@ -1,10 +1,5 @@
 <% @images.each do |image| %>
   <% link = image.split('/').last %>
   <%= image_tag  link %>
-  <ul>
-    <li>
-      <% share_text = CGI.escape("#robisadummy #{Rails.application.secrets.url}/images/#{link}") %>
-    </li>
-  </ul>
 <% end %>
 
