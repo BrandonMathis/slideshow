@@ -18,3 +18,4 @@
 .tape
 config/database.yml
 config/secrets.yml
+public/images
